@@ -1,5 +1,6 @@
 package com.example.administradordetareas
 
+import android.graphics.fonts.FontStyle
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -52,6 +54,7 @@ fun  Contenido (texto1: String, texto2: String){
         )
         Text(
             text = texto1,
+            fontWeight = FontWeight.Bold,
             modifier = Modifier
                 .padding(top = 24.dp, bottom = 8.dp)
                 .align(alignment = Alignment.CenterHorizontally)
